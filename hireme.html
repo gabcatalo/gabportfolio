@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRE ME</title>
+    <link rel="stylesheet" href="hiremestyle.css">
+    <script src="https://kit.fontawesome.com/8933389d53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "R1QKBpmCush-x9fHY",
+            });
+        })();
+    </script>
+    <script src="hireme.js"></script>
+</head>
+
+<body>
+    <div class="VCOVER">
+        <div class="back">
+            <a href="website.html"><i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+        <div class="container">
+            <div class="greetings">
+                <h1>Hi There!</h1>
+                <p>Are you looking for 3D Visualizer for your <br>
+                    Project? I can Help you with that !</p>
+    
+            </div>
+
+            <form>
+                <h2>HIRE ME!</h2>
+
+                <div class="inputform">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-regular fa-user"></i> Your Name</label>
+                </div>
+                <div class="inputform">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-regular fa-envelope"></i> Your Email</label>
+                </div>
+                <div class="inputform">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-mobile-screen"></i> Phone No.</label>
+                </div>
+                <div class="inputform">
+                    <textarea id="Message" rows="5" required></textarea>
+                    <label for="Message"><i class="fa-regular fa-message"></i>Your Message</label>
+                </div>
+                <button type="submit" onclick="sendemail()">SEND <i class="fa-regular fa-paper-plane"></i></button>
+
+            </form>
+
+        </div>
+
+
+       
+
+
+    </div>
+
+
+</body>
+
+</html>

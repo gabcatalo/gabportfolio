@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDUSTRIAL</title>
+    <link rel="stylesheet" href="industrial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8933389d53.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="COVER">
+        <nav>
+            <img src="images/logo.png" alt="design" class="logo">
+            <div class="navlinks" id="navLinks" >
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    
+                    <li >
+                        
+                        <a href="website.html">HOME</a>
+                        <a href="portfolio.html">PROJECTS</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACTS</a>
+    
+                    </li>
+    
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+           </nav>
+        <div class="container">
+            <h1>MY <span>PROJECTS</span></h1>
+            <form class="project1">
+                <h3>PROJECTS GALLARY</h3>
+                <select class="dropdown" id="portfolio">
+                    <option value="portfolio.html">Apartment Interior</option>
+                    <option value="milktea.html" >Milk Tea Shop</option>
+                    <option value="Industrial.html" selected >Industrial House</option>
+                    <option value="bungalow.html">Bungalow House</option>
+                </select>
+                
+
+            </form>
+            <div id="industrial">
+            </div>
+            <h2>
+                Industrial House
+            </h2>
+            <div class="industrial">
+                <div><img src="images/render 1edit.png" alt=""></div>
+                <div><img src="images/render 2edit.png" alt=""></div>
+                <div><img src="images/render 3edit.png" alt=""></div>
+                <div><img src="images/render 4edit.png" alt=""></div>
+                <div><img src="images/render 5edit.png" alt=""></div>
+                <div><img src="images/render 6edit.png" alt=""></div>
+                <div><img src="images/render 7edit.png" alt=""></div>
+                <div><img src="images/render 8edit.png" alt=""></div>
+                <div><img src="images/render 9edit.png" alt=""></div>
+                <div><img src="images/render 10edit.png" alt=""></div>
+                <div><img src="images/render 11edit.png" alt=""></div>
+            </div>
+           
+           
+          
+        </div>
+    </div>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hidemenu() {
+            navLinks.style.right = "-210px";
+
+        }
+
+
+    </script>
+      <script>
+        var urlMenu = document.getElementById("portfolio");
+        urlMenu.onchange = function(){
+            var useroption = this.options[this.selectedIndex];
+            if (useroption.value != "nothing"){
+                window.open(useroption.value,"Apartment Interior,Milk Tea Shop,Industrial House,Bungalow House");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

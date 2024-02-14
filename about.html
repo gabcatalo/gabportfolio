@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8933389d53.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <div class="COVER">
+        <nav>
+            <img src="images/logo.png" alt="design" class="logo">
+            <div class="navlinks" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+
+                    <li>
+
+                        <a href="website.html">HOME</a>
+                        <a href="portfolio.html">PROJECTS</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACTS</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="container">
+            <div class="word">
+                <h1>ABOUT ME</h1>
+            <p> - I'm a self taught 3D Visualizer with three Years <br>
+                of Experience in a same field. <br>
+                I am using SketchUp for modeling and Enscape <br>
+                and Lumion for rendering. </p>
+            </div>
+            <main id="swup" class="vid">
+                <video class="vid1" src="videos/0929.mp4" controls autoplay muted loop></video>
+                <video class="vid2" src="videos/1003.mp4" controls autoplay muted loop></video>
+
+            </main>
+        </div>
+
+
+
+
+
+    </div>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

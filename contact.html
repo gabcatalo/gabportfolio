@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/8933389d53.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8933389d53.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "R1QKBpmCush-x9fHY",
+            });
+        })();
+    </script>
+    <script src="hireme.js"></script>
+</head>
+<body>
+    <div class="VCOVER">
+        <nav>
+            <img src="images/logo.png" alt="design" class="logo">
+            <div class="navlinks" id="navLinks" >
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    
+                    <li >
+                        
+                        <a href="website.html">HOME</a>
+                        <a href="portfolio.html">PROJECTS</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACTS</a>
+    
+                    </li>
+    
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+           </nav>
+        
+        <div class="container">
+
+            <form>
+                <h2><i class="fa-regular fa-envelope"></i> EMAIL ME
+                    <a href="https://www.facebook.com/Gab Catalo" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.Instagram.com/gabgabcatalo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@gab_catalo" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </h2>
+                
+                   
+
+                <div class="inputform">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-regular fa-user"></i> Your Name</label>
+                </div>
+                <div class="inputform">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-regular fa-envelope"></i> Your Email</label>
+                </div>
+                <div class="inputform">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-mobile-screen"></i> Phone No.</label>
+                </div>
+                <div class="inputform">
+                    <textarea id="Message" rows="5" required></textarea>
+                    <label for="Message"><i class="fa-regular fa-message"></i>Your Message</label>
+                </div>
+                <button type="submit" onclick="sendemail()">SEND <i class="fa-regular fa-paper-plane"></i></button>
+
+            </form>
+
+        </div>
+
+
+        
+
+
+    </div>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hidemenu() {
+            navLinks.style.right = "-210px";
+
+        }
+
+
+    </script>
+</body>
+</html>

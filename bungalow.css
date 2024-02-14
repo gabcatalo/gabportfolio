@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.COVER {
+    width: 100%;
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/render\ 10edit.png);
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+
+nav .logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    position: relative;
+}
+.navlinks ul li i{
+    display: none;
+}
+
+.navlinks ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(6, 207, 36);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navlinks ul li a:hover::after{
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+}
+.container {
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+      
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+.container h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    font-size: 50px;
+}
+.container h1 span{
+    color: rgb(6, 207, 36);
+    margin-left: 15px;
+}
+input{
+    display: none;
+}
+.project1{
+    width: 100%;
+    margin: 0 auto 50px auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.dropdown{
+    margin: 10px;
+   height: 100%;
+   width: 30%; 
+   border-radius: 10px;
+
+}
+.dropdown option{
+    margin: 10px;
+
+}
+h3{
+    height: 100%;
+    background-color: rgb(6, 207, 36);
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+    border-radius: 10px;
+}
+h2{
+    color: white;
+    margin-bottom: 20px;
+
+}
+.link{
+    margin-bottom: 20px;
+}
+.link a{
+    padding: 3px 20px;
+    text-decoration: none;
+    background-color: rgb(6, 207, 36);
+    border-radius: 15px;
+    color: white;
+
+}
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 50px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: .5s;
+}
+label:hover{
+    color: rgb(41, 217, 44);
+}
+.bungalow{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bungalow img{
+    width: 400px;
+    border-radius: 10px;
+    margin: 0 10px;
+    
+}
+nav .fa-solid{
+    display: none;
+}
+@media (max-width:1277px){
+    
+    .COVER{
+        height: 300vh;
+    }
+}
+
+@media (max-width:860px){
+    nav .logo {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 140px;
+        cursor: pointer;
+    }
+    .content h1{
+        font-size: 60px;
+        margin-top: 80px;  
+    }
+    
+    .content p{
+        font-size:30px;
+    
+    }
+    .navlinks ul li{
+        display: block;
+        margin-left: 0;
+        margin-top: 50px;
+
+    }
+    .navlinks ul li a{
+        display: inline-block;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .navlinks {
+        position: absolute;
+        background: green;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -210px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        
+    }
+    .COVER{
+        height: 450vh;
+    }
+    h3{
+        font-size: 13px;
+        padding: 0 20px;
+    }
+    .container h1{
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        font-size: 30px;
+    }
+    .container h1 span{
+        color: rgb(6, 207, 36);
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:500px){
+    .industrial img{
+        width: 300px;
+        border-radius: 10px;
+        margin: 0 10px;
+        
+    }
+    .COVER{
+        height: 470vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
